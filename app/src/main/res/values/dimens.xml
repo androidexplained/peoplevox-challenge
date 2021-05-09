@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_padding_medium">16dp</dimen>
+    <dimen name="margin_padding_small">8dp</dimen>
+    <dimen name="barcode_max_width">120dp</dimen>
+</resources>
