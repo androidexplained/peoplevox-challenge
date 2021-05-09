@@ -1,4 +1,4 @@
-package com.sample.randomscanner.presentation
+package com.sample.randomscanner.presentation.main
 
 import com.google.common.truth.Truth
 import com.nhaarman.mockitokotlin2.any
@@ -8,7 +8,6 @@ import com.sample.randomscanner.utils.InstantExecutorExtension
 import com.sample.randomscanner.domain.BarcodeProducerUseCase
 import com.sample.randomscanner.domain.model.Barcode
 import com.sample.randomscanner.domain.model.BarcodeColor
-import com.sample.randomscanner.presentation.main.MainViewModel
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 

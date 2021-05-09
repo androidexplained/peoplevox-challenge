@@ -1,7 +1,6 @@
-package com.sample.randomscanner.data
+package com.sample.randomscanner.data.repository
 
 import com.google.common.truth.Truth
-import com.sample.randomscanner.data.repository.RandomBarcodeRepository
 import org.junit.jupiter.api.Test
 
 class RandomBarcodeRepositoryTest {
