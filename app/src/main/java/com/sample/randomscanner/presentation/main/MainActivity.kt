@@ -1,4 +1,4 @@
-package com.sample.randomscanner.presentation
+package com.sample.randomscanner.presentation.main
 
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sample.randomscanner.databinding.ActivityMainBinding
-import com.sample.randomscanner.presentation.adapter.BarcodeAdapter
+import com.sample.randomscanner.presentation.main.adapter.BarcodeAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

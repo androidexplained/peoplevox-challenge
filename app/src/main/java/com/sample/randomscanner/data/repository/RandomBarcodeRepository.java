@@ -1,6 +1,6 @@
-package com.sample.randomscanner.data;
+package com.sample.randomscanner.data.repository;
 
-import com.sample.randomscanner.domain.BarcodeRepository;
+import com.sample.randomscanner.domain.usecase.BarcodeRepository;
 import com.sample.randomscanner.domain.model.Barcode;
 import com.sample.randomscanner.domain.model.BarcodeColor;
 

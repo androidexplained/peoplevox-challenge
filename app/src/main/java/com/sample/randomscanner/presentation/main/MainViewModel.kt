@@ -1,4 +1,4 @@
-package com.sample.randomscanner.presentation
+package com.sample.randomscanner.presentation.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -5,6 +5,7 @@ import com.nhaarman.mockitokotlin2.eq
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
 import com.sample.randomscanner.domain.model.Barcode
+import com.sample.randomscanner.domain.usecase.BarcodeRepository
 
 import org.junit.jupiter.api.Test
 

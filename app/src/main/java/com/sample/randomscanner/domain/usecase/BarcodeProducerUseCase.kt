@@ -2,6 +2,7 @@ package com.sample.randomscanner.domain
 
 import com.sample.randomscanner.domain.di.DomainModule
 import com.sample.randomscanner.domain.model.Barcode
+import com.sample.randomscanner.domain.usecase.BarcodeRepository
 import javax.inject.Inject
 import javax.inject.Named
 

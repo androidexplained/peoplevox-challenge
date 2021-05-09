@@ -1,7 +1,7 @@
 package com.sample.randomscanner.data.di
 
-import com.sample.randomscanner.data.RandomBarcodeRepository
-import com.sample.randomscanner.domain.BarcodeRepository
+import com.sample.randomscanner.data.repository.RandomBarcodeRepository
+import com.sample.randomscanner.domain.usecase.BarcodeRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,7 +29,12 @@ class DataModule {
         @Named(Companion.barcodes) barcodes: List<String>,
         @Named(Companion.types) types: List<String>,
         @Named(Companion.colors) colors: List<String>
-    ): BarcodeRepository = RandomBarcodeRepository(barcodes, types, colors)
+    ): BarcodeRepository =
+        RandomBarcodeRepository(
+            barcodes,
+            types,
+            colors
+        )
 
     private companion object {
         const val barcodes = "barcodes"
