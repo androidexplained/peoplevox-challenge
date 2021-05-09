@@ -14,7 +14,6 @@ class FixedRateTimer @Inject constructor() : Timer {
     override fun cancel() {
         timer.cancel()
     }
-
 }
 
 interface Timer {

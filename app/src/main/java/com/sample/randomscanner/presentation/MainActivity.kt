@@ -4,7 +4,6 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sample.randomscanner.databinding.ActivityMainBinding
@@ -41,13 +40,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun addObservers() {
         viewModel.barcode.observe(this, { barcodeAdapter.addBarcode(it) })
-        viewModel.toolbarConfig.observe(this, {
-            supportActionBar?.run {
-                title = it.title
-                subtitle = it.subtitle
-                setBackgroundDrawable(ColorDrawable(it.color))
-            }
-        })
+        viewModel.toolbarConfig.observe(this, { adjustToolbar(it) })
+    }
+
+    private fun adjustToolbar(it: MainViewModel.ToolbarConfig) {
+        supportActionBar?.run {
+            title = it.title
+            subtitle = it.subtitle
+            setBackgroundDrawable(ColorDrawable(it.color))
+        }
     }
 
     override fun onResume() {

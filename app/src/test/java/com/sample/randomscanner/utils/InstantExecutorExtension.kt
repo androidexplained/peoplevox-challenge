@@ -1,4 +1,4 @@
-package com.sample.randomscanner
+package com.sample.randomscanner.utils
 
 import androidx.arch.core.executor.ArchTaskExecutor
 import androidx.arch.core.executor.TaskExecutor

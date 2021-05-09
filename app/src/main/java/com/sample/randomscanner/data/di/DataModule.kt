@@ -18,14 +18,7 @@ class DataModule {
 
     @Named(types)
     @Provides
-    fun provideTypes() = listOf(
-        "EAN8",
-        "UPCE",
-        "EAN13",
-        "I25",
-        "QRCODE",
-        "CODE128"
-    )
+    fun provideTypes() = listOf("EAN8", "UPCE", "EAN13", "I25", "QRCODE", "CODE128")
 
     @Named(colors)
     @Provides

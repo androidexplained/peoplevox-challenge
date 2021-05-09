@@ -4,7 +4,7 @@ import com.google.common.truth.Truth
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
-import com.sample.randomscanner.InstantExecutorExtension
+import com.sample.randomscanner.utils.InstantExecutorExtension
 import com.sample.randomscanner.domain.BarcodeProducerUseCase
 import com.sample.randomscanner.domain.model.Barcode
 import com.sample.randomscanner.domain.model.BarcodeColor
